@@ -241,5 +241,22 @@ namespace CRUDMahasiswaADO
                 MessageBox.Show("Terjadi Kesalahan: " + ex.Message);
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+
+                txtnim.Text = row.Cells["NIM"].Value.ToString();
+                txtnama.Text = row.Cells["Nama"].Value.ToString();
+                cmbJK.Text = row.Cells["Jenis Kelamin"].Value.ToString();
+                dtpTanggalLahir.Value = Convert.ToDateTime(row.Cells["Tanggal Lahir"].Value);
+                txtAlamat.Text = row.Cells["Alamat"].Value.ToString();
+                txtKodeProdi.Text = row.Cells["Kode Prodi"].Value.ToString();
+            }
+        }
+
+
     }
 }
