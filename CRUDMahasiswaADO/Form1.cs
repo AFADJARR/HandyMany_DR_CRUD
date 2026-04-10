@@ -9,10 +9,13 @@ namespace CRUDMahasiswaADO
         private readonly SqlConnection conn;
         private readonly string connectionString = 
             "Data Source=JONNISHEREEE\\FADJAR; Initial Catalog=DBAkademikADO; Integrated Security=True";
-        public Form1()
+
+        public FormMahasiswa()
         {
             InitializeComponent();
+            conn = new SqlConnection(connectionString);
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
