@@ -44,7 +44,7 @@
             this.txtKodeProdi = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btninsert = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -188,14 +188,15 @@
             this.btninsert.UseVisualStyleBackColor = true;
             this.btninsert.Click += new System.EventHandler(this.btninsert_Click);
             // 
-            // button3
+            // btnDelete
             // 
-            this.button3.Location = new System.Drawing.Point(497, 178);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(135, 26);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "Menghapus Data";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(497, 178);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(135, 26);
+            this.btnDelete.TabIndex = 18;
+            this.btnDelete.Text = "Menghapus Data";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // dataGridView1
             // 
@@ -213,7 +214,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btninsert);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtKodeProdi);
@@ -256,7 +257,7 @@
         private System.Windows.Forms.TextBox txtKodeProdi;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btninsert;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
