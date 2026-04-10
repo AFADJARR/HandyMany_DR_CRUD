@@ -7,7 +7,7 @@ namespace CRUDMahasiswaADO
     public partial class Form1 : Form
     {
         private readonly SqlConnection conn;
-        private readonly string connectionString = 
+        private readonly string connectionString =
             "Data Source=JONNISHEREEE\\FADJAR; Initial Catalog=DBAkademikADO; Integrated Security=True";
 
         public Form1()
@@ -219,9 +219,9 @@ namespace CRUDMahasiswaADO
                     string query = "DELETE  FROM Mahasiswa WHERE NIM = @NIM";
 
                     SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@NIM", txtnim.Text);  
+                    cmd.Parameters.AddWithValue("@NIM", txtnim.Text);
 
-                    int result = cmd.ExecuteNonQuery(); 
+                    int result = cmd.ExecuteNonQuery();
 
                     if (result > 0)
                     {
@@ -267,7 +267,19 @@ namespace CRUDMahasiswaADO
             txtKodeProdi.Clear();
         }
 
+        private void Formm1_Load(object sender, EventArgs e)
+        {
+            cmbJK.Items.Clear();
+            cmbJK.Items.Add("L");
+            cmbJK.Items.Add("P");
 
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.MultiSelect = false;
+            dataGridView1.ReadOnly = true;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
+            dataGridView1.CellClick += dataGridView1_CellContentClick;
+        }
     }
 }
