@@ -42,9 +42,11 @@
             this.btnLoad = new System.Windows.Forms.Button();
             this.txtAlamat = new System.Windows.Forms.TextBox();
             this.txtKodeProdi = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.btninsert = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -166,14 +168,15 @@
             this.txtKodeProdi.Size = new System.Drawing.Size(203, 22);
             this.txtKodeProdi.TabIndex = 15;
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.Location = new System.Drawing.Point(497, 146);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 26);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Mengubah Data";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(497, 146);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(135, 26);
+            this.btnUpdate.TabIndex = 16;
+            this.btnUpdate.Text = "Mengubah Data";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btninsert
             // 
@@ -194,14 +197,25 @@
             this.button3.Text = "Menghapus Data";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(64, 266);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(568, 150);
+            this.dataGridView1.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btninsert);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtKodeProdi);
             this.Controls.Add(this.txtAlamat);
             this.Controls.Add(this.btnLoad);
@@ -218,6 +232,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -239,9 +254,10 @@
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.TextBox txtAlamat;
         private System.Windows.Forms.TextBox txtKodeProdi;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btninsert;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
