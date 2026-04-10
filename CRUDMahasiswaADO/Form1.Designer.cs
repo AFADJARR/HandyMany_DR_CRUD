@@ -55,7 +55,6 @@
             this.label1.Size = new System.Drawing.Size(31, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "NIM";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -141,6 +140,7 @@
             this.btnConnect.TabIndex = 12;
             this.btnConnect.Text = "Membuka Koneksi";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // btnLoad
             // 
@@ -150,6 +150,7 @@
             this.btnLoad.TabIndex = 13;
             this.btnLoad.Text = "Menampulkan Data";
             this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // txtAlamat
             // 
@@ -216,7 +217,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
