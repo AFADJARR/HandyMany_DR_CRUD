@@ -16,7 +16,9 @@ namespace CRUDMahasiswaADO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // Ubah form awal yang dijalankan menjadi Dashboard
+            Application.Run(new Dashboard());
         }
     }
 }
