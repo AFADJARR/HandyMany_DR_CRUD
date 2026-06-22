@@ -286,7 +286,7 @@
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(987, 31);
+            this.bindingNavigator1.Size = new System.Drawing.Size(987, 27);
             this.bindingNavigator1.TabIndex = 20;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -296,7 +296,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
@@ -425,22 +425,24 @@
             // 
             // btnImportdb
             // 
+            this.btnImportdb.BackColor = System.Drawing.SystemColors.ControlDark;
             this.btnImportdb.Location = new System.Drawing.Point(810, 177);
             this.btnImportdb.Name = "btnImportdb";
             this.btnImportdb.Size = new System.Drawing.Size(115, 48);
             this.btnImportdb.TabIndex = 26;
             this.btnImportdb.Text = "Import To Database";
-            this.btnImportdb.UseVisualStyleBackColor = true;
+            this.btnImportdb.UseVisualStyleBackColor = false;
             this.btnImportdb.Click += new System.EventHandler(this.btnImportdb_Click);
             // 
             // btnExcel
             // 
+            this.btnExcel.BackColor = System.Drawing.Color.Silver;
             this.btnExcel.Location = new System.Drawing.Point(810, 108);
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Size = new System.Drawing.Size(115, 53);
             this.btnExcel.TabIndex = 27;
             this.btnExcel.Text = "Export Data From Excel";
-            this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.UseVisualStyleBackColor = false;
             this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
             // 
             // btnUpload
